@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.main{
+    background-image: url(../Assets/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    box-shadow: 1px 1px 1px rgb(235, 204, 204);
+}
+
+.left{
+    flex-basis: 50%;
+    text-align: center;
+    background-color: #013243;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.left h1{
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.left p{
+    color: #6CA4B7;
+    margin-bottom:5rem;
+    font-weight: 400;
+}
+
+.left img{
+    width: 300px;
+}
+
+.right{
+    flex-basis: 50%;
+    background-color: #FFFFFF;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.right p{
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.right .input-list{
+    padding: 1rem;
+    font-size:16px;
+    width: 100%;
+    border:1px solid rgb(235, 204, 204);
+    font-size:  rgb(235, 204, 204);
+}
+
+.input-check{
+    margin-top: 1.5rem;
+}
+
+.inp-text{
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.right a{
+    color:#000000;
+    font-weight: 700;
+}
+
+button{
+    margin-top:3rem;
+    padding:1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    background-color: #013243;
+    color: #fff;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container{
+        flex-direction: column;
+        padding: 2rem 0;
+        width: 100%;
+    }
+
+    .right{
+        padding-bottom: 1rem;
+    }
+
+    .main{
+        height: 100vh;
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+    
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .right{
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    
+    .left h1{
+        margin-top: 20rem;
+    }
+
+    .left{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+    .left img{
+        width: 260px;
+    }
+
+    .main{
+        background-image: none;
+    }
+}
